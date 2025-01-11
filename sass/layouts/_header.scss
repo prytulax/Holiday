@@ -1,0 +1,70 @@
+.header{
+    background-image: url(../../images/phone-header.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 480px;
+    height: 552px;
+    // margin: 0 auto;
+    padding-top: 19px; 
+    padding-bottom: 19px;
+    @extend%center-block;
+    padding-top: 19px; 
+    padding-bottom: 138px;
+    @media screen and (min-width: 768px) {
+        baground-image: url(../../images/tablet-header.png);
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        baground-image: url(../../images/desk-header.png);
+        max-width: 1200px;
+    }
+
+}
+.auth-list{
+    @extend %flex;
+    column-gap: 9px;
+    .auth-item{
+        &:last-child{
+            border-radius: 17px;
+            border: 2px solid #fff;
+            padding: 11px 5px;
+        }
+        .auth-link{
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 13px;
+            text-align: center;
+            color: #fff;
+        }
+         
+    }
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.partner-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+
+    @media screen and (min-width:768px) {
+        flex-wrap: wrap;
+        row-gap: 57px;
+        column-gap: 53px;
+    }
+
+
+    .partner-item {
+
+
+        .partner-img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+}
+}
